@@ -1,0 +1,2 @@
+# Fixed-detection evaluation and tests
+numpy==2.3.5

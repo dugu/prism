@@ -1,0 +1,623 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "invariants": {
+    "frames": 2580,
+    "cue_limit_violations": 0,
+    "cost_violations": 0
+  },
+  "policy_aggregates": [
+    {
+      "condition": "none",
+      "policy": "PRISM",
+      "H": 325,
+      "D": 227,
+      "S": 213,
+      "cues": 2.0596758366448498,
+      "cost": 0.010051868870042465,
+      "transitions_per_s": 3.4624909907277543,
+      "conditional": 0.9383259911894273,
+      "end_to_end": 0.6553846153846153
+    },
+    {
+      "condition": "none",
+      "policy": "Confidence budget",
+      "H": 325,
+      "D": 227,
+      "S": 170,
+      "cues": 4.548611111111111,
+      "cost": 0.014496506508590462,
+      "transitions_per_s": 17.923295786582514,
+      "conditional": 0.748898678414097,
+      "end_to_end": 0.5230769230769231
+    },
+    {
+      "condition": "none",
+      "policy": "Risk budget",
+      "H": 325,
+      "D": 227,
+      "S": 218,
+      "cues": 4.548611111111111,
+      "cost": 0.015721970918312685,
+      "transitions_per_s": 18.80440504714041,
+      "conditional": 0.960352422907489,
+      "end_to_end": 0.6707692307692308
+    },
+    {
+      "condition": "none",
+      "policy": "Nearest budget",
+      "H": 325,
+      "D": 227,
+      "S": 218,
+      "cues": 4.548611111111111,
+      "cost": 0.015295010245003507,
+      "transitions_per_s": 18.088562363643447,
+      "conditional": 0.960352422907489,
+      "end_to_end": 0.6707692307692308
+    },
+    {
+      "condition": "none",
+      "policy": "TTC budget",
+      "H": 325,
+      "D": 227,
+      "S": 177,
+      "cues": 4.548611111111111,
+      "cost": 0.014653704984075502,
+      "transitions_per_s": 26.964473030621786,
+      "conditional": 0.7797356828193832,
+      "end_to_end": 0.5446153846153846
+    },
+    {
+      "condition": "none",
+      "policy": "No persistence",
+      "H": 325,
+      "D": 227,
+      "S": 174,
+      "cues": 1.7254326276881722,
+      "cost": 0.009469311588115552,
+      "transitions_per_s": 5.355636152018077,
+      "conditional": 0.7665198237885462,
+      "end_to_end": 0.5353846153846153
+    },
+    {
+      "condition": "none",
+      "policy": "No centre attenuation",
+      "H": 325,
+      "D": 227,
+      "S": 213,
+      "cues": 2.0596758366448498,
+      "cost": 0.010225479981153578,
+      "transitions_per_s": 3.240268768505532,
+      "conditional": 0.9383259911894273,
+      "end_to_end": 0.6553846153846153
+    },
+    {
+      "condition": "none",
+      "policy": "No quality gate",
+      "H": 325,
+      "D": 227,
+      "S": 213,
+      "cues": 2.0596758366448498,
+      "cost": 0.010051868870042465,
+      "transitions_per_s": 3.4624909907277543,
+      "conditional": 0.9383259911894273,
+      "end_to_end": 0.6553846153846153
+    },
+    {
+      "condition": "none",
+      "policy": "Render all",
+      "H": 325,
+      "D": 227,
+      "S": 227,
+      "cues": 7.776818959891695,
+      "cost": null,
+      "transitions_per_s": 22.68993250350631,
+      "conditional": 1.0,
+      "end_to_end": 0.6984615384615385
+    },
+    {
+      "condition": "none",
+      "policy": "Confidence matched count",
+      "H": 325,
+      "D": 227,
+      "S": 69,
+      "cues": 2.0596758366448498,
+      "cost": null,
+      "transitions_per_s": 9.207713641499144,
+      "conditional": 0.3039647577092511,
+      "end_to_end": 0.2123076923076923
+    },
+    {
+      "condition": "none",
+      "policy": "Risk matched count",
+      "H": 325,
+      "D": 227,
+      "S": 204,
+      "cues": 2.0596758366448498,
+      "cost": null,
+      "transitions_per_s": 5.75242154628331,
+      "conditional": 0.8986784140969163,
+      "end_to_end": 0.6276923076923077
+    },
+    {
+      "condition": "night",
+      "policy": "PRISM",
+      "H": 325,
+      "D": 194,
+      "S": 177,
+      "cues": 1.9816772708235937,
+      "cost": 0.009466455855783465,
+      "transitions_per_s": 4.920091407589216,
+      "conditional": 0.9123711340206185,
+      "end_to_end": 0.5446153846153846
+    },
+    {
+      "condition": "night",
+      "policy": "Confidence budget",
+      "H": 325,
+      "D": 194,
+      "S": 152,
+      "cues": 4.385265700483092,
+      "cost": 0.014065644923883824,
+      "transitions_per_s": 19.302403527738818,
+      "conditional": 0.7835051546391752,
+      "end_to_end": 0.4676923076923077
+    },
+    {
+      "condition": "night",
+      "policy": "Risk budget",
+      "H": 325,
+      "D": 194,
+      "S": 189,
+      "cues": 4.385265700483092,
+      "cost": 0.014934233913579165,
+      "transitions_per_s": 22.396311798737727,
+      "conditional": 0.9742268041237113,
+      "end_to_end": 0.5815384615384616
+    },
+    {
+      "condition": "night",
+      "policy": "Nearest budget",
+      "H": 325,
+      "D": 194,
+      "S": 194,
+      "cues": 4.383876811594203,
+      "cost": 0.014543851177779728,
+      "transitions_per_s": 21.20624537361695,
+      "conditional": 1.0,
+      "end_to_end": 0.5969230769230769
+    },
+    {
+      "condition": "night",
+      "policy": "TTC budget",
+      "H": 325,
+      "D": 194,
+      "S": 155,
+      "cues": 4.383876811594203,
+      "cost": 0.01394183364865786,
+      "transitions_per_s": 27.999521534595605,
+      "conditional": 0.7989690721649485,
+      "end_to_end": 0.47692307692307695
+    },
+    {
+      "condition": "night",
+      "policy": "No persistence",
+      "H": 325,
+      "D": 194,
+      "S": 149,
+      "cues": 1.6105275172393643,
+      "cost": 0.00876036546599852,
+      "transitions_per_s": 6.935128369954807,
+      "conditional": 0.7680412371134021,
+      "end_to_end": 0.4584615384615385
+    },
+    {
+      "condition": "night",
+      "policy": "No centre attenuation",
+      "H": 325,
+      "D": 194,
+      "S": 177,
+      "cues": 1.9816772708235937,
+      "cost": 0.009591455855783467,
+      "transitions_per_s": 4.475646963144772,
+      "conditional": 0.9123711340206185,
+      "end_to_end": 0.5446153846153846
+    },
+    {
+      "condition": "night",
+      "policy": "No quality gate",
+      "H": 325,
+      "D": 194,
+      "S": 177,
+      "cues": 1.9816772708235937,
+      "cost": 0.009466455855783465,
+      "transitions_per_s": 4.920091407589216,
+      "conditional": 0.9123711340206185,
+      "end_to_end": 0.5446153846153846
+    },
+    {
+      "condition": "night",
+      "policy": "Render all",
+      "H": 325,
+      "D": 194,
+      "S": 194,
+      "cues": 6.88874041851722,
+      "cost": null,
+      "transitions_per_s": 27.034790400498675,
+      "conditional": 1.0,
+      "end_to_end": 0.5969230769230769
+    },
+    {
+      "condition": "night",
+      "policy": "Confidence matched count",
+      "H": 325,
+      "D": 194,
+      "S": 52,
+      "cues": 1.9816772708235937,
+      "cost": null,
+      "transitions_per_s": 9.712717440003118,
+      "conditional": 0.26804123711340205,
+      "end_to_end": 0.16
+    },
+    {
+      "condition": "night",
+      "policy": "Risk matched count",
+      "H": 325,
+      "D": 194,
+      "S": 163,
+      "cues": 1.9816772708235937,
+      "cost": null,
+      "transitions_per_s": 8.467334083294373,
+      "conditional": 0.8402061855670103,
+      "end_to_end": 0.5015384615384615
+    },
+    {
+      "condition": "fog",
+      "policy": "PRISM",
+      "H": 325,
+      "D": 205,
+      "S": 176,
+      "cues": 1.9913811701340192,
+      "cost": 0.010003584107643758,
+      "transitions_per_s": 4.638169364578463,
+      "conditional": 0.8585365853658536,
+      "end_to_end": 0.5415384615384615
+    },
+    {
+      "condition": "fog",
+      "policy": "Confidence budget",
+      "H": 325,
+      "D": 205,
+      "S": 140,
+      "cues": 4.372463768115942,
+      "cost": 0.014031523114870657,
+      "transitions_per_s": 15.584208693704223,
+      "conditional": 0.6829268292682927,
+      "end_to_end": 0.4307692307692308
+    },
+    {
+      "condition": "fog",
+      "policy": "Risk budget",
+      "H": 325,
+      "D": 205,
+      "S": 194,
+      "cues": 4.372463768115942,
+      "cost": 0.015311410267648434,
+      "transitions_per_s": 20.25460325112981,
+      "conditional": 0.9463414634146341,
+      "end_to_end": 0.5969230769230769
+    },
+    {
+      "condition": "fog",
+      "policy": "Nearest budget",
+      "H": 325,
+      "D": 205,
+      "S": 192,
+      "cues": 4.372463768115942,
+      "cost": 0.014878949518856165,
+      "transitions_per_s": 19.038872574801307,
+      "conditional": 0.9365853658536586,
+      "end_to_end": 0.5907692307692308
+    },
+    {
+      "condition": "fog",
+      "policy": "TTC budget",
+      "H": 325,
+      "D": 205,
+      "S": 172,
+      "cues": 4.372463768115942,
+      "cost": 0.014475963407745051,
+      "transitions_per_s": 25.788108004129654,
+      "conditional": 0.8390243902439024,
+      "end_to_end": 0.5292307692307693
+    },
+    {
+      "condition": "fog",
+      "policy": "No persistence",
+      "H": 325,
+      "D": 205,
+      "S": 150,
+      "cues": 1.6458563435016365,
+      "cost": 0.009285096155719182,
+      "transitions_per_s": 5.859271515116098,
+      "conditional": 0.7317073170731707,
+      "end_to_end": 0.46153846153846156
+    },
+    {
+      "condition": "fog",
+      "policy": "No centre attenuation",
+      "H": 325,
+      "D": 205,
+      "S": 172,
+      "cues": 1.98999228124513,
+      "cost": 0.01004219521875487,
+      "transitions_per_s": 4.249280475689575,
+      "conditional": 0.8390243902439024,
+      "end_to_end": 0.5292307692307693
+    },
+    {
+      "condition": "fog",
+      "policy": "No quality gate",
+      "H": 325,
+      "D": 205,
+      "S": 176,
+      "cues": 1.9913811701340192,
+      "cost": 0.010003584107643758,
+      "transitions_per_s": 4.638169364578463,
+      "conditional": 0.8585365853658536,
+      "end_to_end": 0.5415384615384615
+    },
+    {
+      "condition": "fog",
+      "policy": "Render all",
+      "H": 325,
+      "D": 205,
+      "S": 205,
+      "cues": 7.035167937704535,
+      "cost": null,
+      "transitions_per_s": 21.811960661134485,
+      "conditional": 1.0,
+      "end_to_end": 0.6307692307692307
+    },
+    {
+      "condition": "fog",
+      "policy": "Confidence matched count",
+      "H": 325,
+      "D": 205,
+      "S": 79,
+      "cues": 1.9913811701340192,
+      "cost": null,
+      "transitions_per_s": 10.730694590540752,
+      "conditional": 0.3853658536585366,
+      "end_to_end": 0.24307692307692308
+    },
+    {
+      "condition": "fog",
+      "policy": "Risk matched count",
+      "H": 325,
+      "D": 205,
+      "S": 163,
+      "cues": 1.9913811701340192,
+      "cost": null,
+      "transitions_per_s": 7.19182079827022,
+      "conditional": 0.7951219512195122,
+      "end_to_end": 0.5015384615384615
+    },
+    {
+      "condition": "rain",
+      "policy": "PRISM",
+      "H": 325,
+      "D": 172,
+      "S": 151,
+      "cues": 1.8218490679055632,
+      "cost": 0.009053818427857645,
+      "transitions_per_s": 5.316097621552127,
+      "conditional": 0.877906976744186,
+      "end_to_end": 0.4646153846153846
+    },
+    {
+      "condition": "rain",
+      "policy": "Confidence budget",
+      "H": 325,
+      "D": 172,
+      "S": 139,
+      "cues": 4.217210144927536,
+      "cost": 0.013232071998694875,
+      "transitions_per_s": 22.469452479741314,
+      "conditional": 0.8081395348837209,
+      "end_to_end": 0.4276923076923077
+    },
+    {
+      "condition": "rain",
+      "policy": "Risk budget",
+      "H": 325,
+      "D": 172,
+      "S": 162,
+      "cues": 4.217210144927536,
+      "cost": 0.014434723908417095,
+      "transitions_per_s": 23.601564934938445,
+      "conditional": 0.9418604651162791,
+      "end_to_end": 0.49846153846153846
+    },
+    {
+      "condition": "rain",
+      "policy": "Nearest budget",
+      "H": 325,
+      "D": 172,
+      "S": 169,
+      "cues": 4.217210144927536,
+      "cost": 0.014023578075083762,
+      "transitions_per_s": 22.86926206755493,
+      "conditional": 0.9825581395348837,
+      "end_to_end": 0.52
+    },
+    {
+      "condition": "rain",
+      "policy": "TTC budget",
+      "H": 325,
+      "D": 172,
+      "S": 144,
+      "cues": 4.217210144927536,
+      "cost": 0.013607214947843619,
+      "transitions_per_s": 30.24812631486676,
+      "conditional": 0.8372093023255814,
+      "end_to_end": 0.4430769230769231
+    },
+    {
+      "condition": "rain",
+      "policy": "No persistence",
+      "H": 325,
+      "D": 172,
+      "S": 140,
+      "cues": 1.4704530568217236,
+      "cost": 0.008322413870139862,
+      "transitions_per_s": 7.831764015505688,
+      "conditional": 0.813953488372093,
+      "end_to_end": 0.4307692307692308
+    },
+    {
+      "condition": "rain",
+      "policy": "No centre attenuation",
+      "H": 325,
+      "D": 172,
+      "S": 148,
+      "cues": 1.8218490679055632,
+      "cost": 0.0091093739834132,
+      "transitions_per_s": 5.093875399329905,
+      "conditional": 0.8604651162790697,
+      "end_to_end": 0.4553846153846154
+    },
+    {
+      "condition": "rain",
+      "policy": "No quality gate",
+      "H": 325,
+      "D": 172,
+      "S": 151,
+      "cues": 1.8218490679055632,
+      "cost": 0.009053818427857645,
+      "transitions_per_s": 5.316097621552127,
+      "conditional": 0.877906976744186,
+      "end_to_end": 0.4646153846153846
+    },
+    {
+      "condition": "rain",
+      "policy": "Render all",
+      "H": 325,
+      "D": 172,
+      "S": 172,
+      "cues": 6.80359287342216,
+      "cost": null,
+      "transitions_per_s": 27.802309782608695,
+      "conditional": 1.0,
+      "end_to_end": 0.5292307692307693
+    },
+    {
+      "condition": "rain",
+      "policy": "Confidence matched count",
+      "H": 325,
+      "D": 172,
+      "S": 76,
+      "cues": 1.8218490679055632,
+      "cost": null,
+      "transitions_per_s": 11.405243152953094,
+      "conditional": 0.4418604651162791,
+      "end_to_end": 0.23384615384615384
+    },
+    {
+      "condition": "rain",
+      "policy": "Risk matched count",
+      "H": 325,
+      "D": 172,
+      "S": 137,
+      "cues": 1.8218490679055632,
+      "cost": null,
+      "transitions_per_s": 8.761372380006234,
+      "conditional": 0.7965116279069767,
+      "end_to_end": 0.42153846153846153
+    }
+  ],
+  "state_statistics": [
+    {
+      "condition": "all",
+      "matched": 12222,
+      "range_median_ape_pct": 7.513899011253172,
+      "ttc_eligible": 1449,
+      "ttc_finite": 840,
+      "ttc_availability": 0.5797101449275363,
+      "ttc_median_abs_error": 0.45451467378997823
+    },
+    {
+      "condition": "none",
+      "matched": 3349,
+      "range_median_ape_pct": 6.88455649417633,
+      "ttc_eligible": 378,
+      "ttc_finite": 226,
+      "ttc_availability": 0.5978835978835979,
+      "ttc_median_abs_error": 0.4512433147947365
+    },
+    {
+      "condition": "night",
+      "matched": 2989,
+      "range_median_ape_pct": 7.8558869884935465,
+      "ttc_eligible": 352,
+      "ttc_finite": 202,
+      "ttc_availability": 0.5738636363636364,
+      "ttc_median_abs_error": 0.4814156900383708
+    },
+    {
+      "condition": "fog",
+      "matched": 2991,
+      "range_median_ape_pct": 7.968171865400178,
+      "ttc_eligible": 363,
+      "ttc_finite": 207,
+      "ttc_availability": 0.5702479338842975,
+      "ttc_median_abs_error": 0.4062570527229825
+    },
+    {
+      "condition": "rain",
+      "matched": 2893,
+      "range_median_ape_pct": 7.494038025703268,
+      "ttc_eligible": 356,
+      "ttc_finite": 205,
+      "ttc_availability": 0.5758426966292135,
+      "ttc_median_abs_error": 0.4620309322559888
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "comparator": "Risk budget",
+      "eligible_scenes": 7,
+      "mean_difference": -0.019715956558061822,
+      "ci95": [
+        -0.04603174603174603,
+        0.0031746031746031633
+      ],
+      "seed": 20260911,
+      "resamples": 10000
+    },
+    {
+      "comparator": "Confidence budget",
+      "eligible_scenes": 7,
+      "mean_difference": 0.0731549103092368,
+      "ci95": [
+        -0.005555555555555551,
+        0.15405609716381324
+      ],
+      "seed": 20260911,
+      "resamples": 10000
+    },
+    {
+      "comparator": "Risk matched count",
+      "eligible_scenes": 7,
+      "mean_difference": 0.013993316624895573,
+      "ci95": [
+        -0.005639097744360896,
+        0.047619047619047616
+      ],
+      "seed": 20260911,
+      "resamples": 10000
+    }
+  ]
+}

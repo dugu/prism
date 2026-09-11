@@ -1,0 +1,58 @@
+{
+  "full policy": {
+    "cues": 2.0,
+    "coverage_pooled": 0.9383259911894273,
+    "ink_pct": 0.9781240310077519,
+    "coverage": 0.9230092832843222,
+    "flicker_per_s": 3.441860465116279,
+    "search_time_s": 0.463594000115385
+  },
+  "without hysteresis": {
+    "cues": 1.6542635658914728,
+    "coverage_pooled": 0.7665198237885462,
+    "ink_pct": 0.916015503875969,
+    "coverage": 0.6519667932972293,
+    "flicker_per_s": 5.3023255813953485,
+    "search_time_s": 0.43532986177448485
+  },
+  "without foveal protection": {
+    "cues": 2.0,
+    "coverage_pooled": 0.9383259911894273,
+    "ink_pct": 0.9928527131782945,
+    "coverage": 0.9230092832843222,
+    "flicker_per_s": 3.317829457364341,
+    "search_time_s": 0.463594000115385
+  },
+  "without uncertainty gate": {
+    "cues": 2.0,
+    "coverage_pooled": 0.9383259911894273,
+    "ink_pct": 0.9781240310077519,
+    "coverage": 0.9230092832843222,
+    "flicker_per_s": 3.441860465116279,
+    "search_time_s": 0.463594000115385
+  },
+  "without ink and cue budget": {
+    "cues": 2.041860465116279,
+    "coverage_pooled": 0.9383259911894273,
+    "ink_pct": 1.002837209302326,
+    "coverage": 0.9230092832843222,
+    "flicker_per_s": 3.255813953488372,
+    "search_time_s": 0.4667926361453796
+  },
+  "low threshold, r_on = 0.12": {
+    "cues": 3.503875968992248,
+    "coverage_pooled": 0.9691629955947136,
+    "ink_pct": 1.2810697674418607,
+    "coverage": 0.9746583636049126,
+    "flicker_per_s": 7.689922480620155,
+    "search_time_s": 0.5573867356770039
+  },
+  "low threshold, no budget": {
+    "cues": 3.9302325581395348,
+    "coverage_pooled": 0.9823788546255506,
+    "ink_pct": 1.418279069767442,
+    "coverage": 0.985296661477253,
+    "flicker_per_s": 7.72093023255814,
+    "search_time_s": 0.5782649119777762
+  }
+}

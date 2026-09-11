@@ -1,0 +1,393 @@
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2597.0±1084.3 MB/s, size: 210.6 KB)
+                   all        554       5644      0.705      0.514      0.581      0.393
+Speed: 2.1ms preprocess, 105.5ms inference, 0.0ms loss, 3.3ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 640, 'backend': 'PyTorch FP32', 'mean_ms': 96.55, 'median_ms': 94.06, 'p95_ms': 109.24, 'fps_mean': 10.36, 'mAP50': 0.5808, 'mAP50_95': 0.3931}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (5.4 MB)
+ONNX: starting export with onnx 1.22.0 opset 17...
+ONNX: export success ✅ 0.9s, saved as '/home/claude/work/models/yolo11n.onnx' (10.2 MB)
+Export complete (1.5s)
+Results saved to /home/claude/work/models/yolo11n.onnx
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n.onnx imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n.onnx imgsz=640 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_640.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_640.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1793.4±735.5 MB/s, size: 162.2 KB)
+                   all        554       5644      0.697      0.513      0.579       0.39
+Speed: 1.8ms preprocess, 63.8ms inference, 0.0ms loss, 3.8ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 640, 'backend': 'ONNX Runtime FP32', 'mean_ms': 72.36, 'median_ms': 69.89, 'p95_ms': 82.95, 'fps_mean': 13.82, 'mAP50': 0.5795, 'mAP50_95': 0.3897}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (5.4 MB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+OpenVINO: export success ✅ 2.7s, saved as '/home/claude/work/models/yolo11n_openvino_model/' (10.4 MB)
+Export complete (3.2s)
+Results saved to /home/claude/work/models/yolo11n_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n_openvino_model/ imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n_openvino_model/ imgsz=640 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_640_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_640_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1863.6±406.6 MB/s, size: 177.7 KB)
+                   all        554       5644      0.697      0.513      0.579       0.39
+Speed: 2.1ms preprocess, 53.5ms inference, 0.0ms loss, 3.8ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 640, 'backend': 'OpenVINO FP32', 'mean_ms': 57.56, 'median_ms': 56.64, 'p95_ms': 65.42, 'fps_mean': 17.37, 'mAP50': 0.5795, 'mAP50_95': 0.3897}
+WARNING ⚠️ 'int8' is deprecated and will be removed in the future. Use 'quantize' instead.
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (5.4 MB)
+OpenVINO: collecting INT8 calibration images from 'data=/home/claude/work/data/coco_traffic/coco_traffic.yaml'
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2430.4±721.3 MB/s, size: 203.1 KB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+INFO:nncf:34 ignored nodes were found by names in the NNCFGraph
+INFO:nncf:Not adding activation input quantizer for operation: 132 __module.model.23/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 195 __module.model.23/aten::view/Reshape_3
+INFO:nncf:Not adding activation input quantizer for operation: 252 __module.model.23/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 300 __module.model.23/aten::view/Reshape_4
+INFO:nncf:Not adding activation input quantizer for operation: 334 __module.model.23/aten::view/Reshape_2
+INFO:nncf:Not adding activation input quantizer for operation: 341 __module.model.23/aten::view/Reshape_5
+INFO:nncf:Not adding activation input quantizer for operation: 139 __module.model.23/aten::cat/Concat
+INFO:nncf:Not adding activation input quantizer for operation: 149 __module.model.23.dfl/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 159 __module.model.23.dfl/aten::transpose/Transpose
+INFO:nncf:Not adding activation input quantizer for operation: 171 __module.model.23.dfl/aten::softmax/Softmax
+INFO:nncf:Not adding activation input quantizer for operation: 183 __module.model.23.dfl.conv/aten::_convolution/Convolution
+INFO:nncf:Not adding activation input quantizer for operation: 194 __module.model.23.dfl/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 205 __module.model.23/prim::ListUnpack/VariadicSplit
+INFO:nncf:Not adding activation input quantizer for operation: 216 __module.model.23/aten::sub/Subtract
+INFO:nncf:Not adding activation input quantizer for operation: 217 __module.model.23/aten::add/Add
+INFO:nncf:Not adding activation input quantizer for operation: 228 __module.model.23/aten::add/Add_1
+238 __module.model.23/aten::div/Divide
+INFO:nncf:Not adding activation input quantizer for operation: 229 __module.model.23/aten::sub/Subtract_1
+INFO:nncf:Not adding activation input quantizer for operation: 239 __module.model.23/aten::cat/Concat_1
+INFO:nncf:Not adding activation input quantizer for operation: 247 __module.model.23/aten::mul/Multiply
+INFO:nncf:Not adding activation input quantizer for operation: 206 __module.model.23/aten::cat/Concat_2
+INFO:nncf:Not adding activation input quantizer for operation: 218 __module.model.23/aten::sigmoid/Sigmoid
+INFO:nncf:Not adding activation input quantizer for operation: 230 __module.model.23/aten::cat/Concat_3
+OpenVINO: export success ✅ 103.0s, saved as '/home/claude/work/models/yolo11n_int8_openvino_model/' (3.3 MB)
+Export complete (103.6s)
+Results saved to /home/claude/work/models/yolo11n_int8_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n_int8_openvino_model/ imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n_int8_openvino_model/ imgsz=640 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_640_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_640_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1059.2±170.0 MB/s, size: 214.3 KB)
+                   all        554       5644        0.7      0.511      0.577      0.387
+Speed: 1.9ms preprocess, 30.6ms inference, 0.0ms loss, 3.8ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 640, 'backend': 'OpenVINO INT8', 'mean_ms': 35.77, 'median_ms': 34.43, 'p95_ms': 43.04, 'fps_mean': 27.96, 'mAP50': 0.577, 'mAP50_95': 0.3867}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 6.5 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1851.5±352.4 MB/s, size: 163.5 KB)
+                   all        554       5644      0.684      0.431      0.493      0.324
+Speed: 0.7ms preprocess, 58.6ms inference, 0.0ms loss, 2.2ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 416, 'backend': 'PyTorch FP32', 'mean_ms': 57.09, 'median_ms': 55.62, 'p95_ms': 70.52, 'fps_mean': 17.52, 'mAP50': 0.4926, 'mAP50_95': 0.3242}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 2.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (5.4 MB)
+ONNX: starting export with onnx 1.22.0 opset 17...
+ONNX: export success ✅ 0.9s, saved as '/home/claude/work/models/yolo11n.onnx' (10.1 MB)
+Export complete (1.3s)
+Results saved to /home/claude/work/models/yolo11n.onnx
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n.onnx imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n.onnx imgsz=416 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_416.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_416.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2394.2±655.1 MB/s, size: 192.1 KB)
+                   all        554       5644      0.657      0.438       0.49      0.324
+Speed: 0.8ms preprocess, 30.1ms inference, 0.0ms loss, 2.6ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 416, 'backend': 'ONNX Runtime FP32', 'mean_ms': 33.29, 'median_ms': 32.79, 'p95_ms': 38.84, 'fps_mean': 30.04, 'mAP50': 0.4899, 'mAP50_95': 0.3244}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 2.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (5.4 MB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+OpenVINO: export success ✅ 2.1s, saved as '/home/claude/work/models/yolo11n_openvino_model/' (10.3 MB)
+Export complete (2.5s)
+Results saved to /home/claude/work/models/yolo11n_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n_openvino_model/ imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n_openvino_model/ imgsz=416 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_416_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_416_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1130.2±323.0 MB/s, size: 185.4 KB)
+                   all        554       5644      0.657      0.438       0.49      0.324
+Speed: 0.9ms preprocess, 23.7ms inference, 0.0ms loss, 2.4ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 416, 'backend': 'OpenVINO FP32', 'mean_ms': 28.23, 'median_ms': 27.2, 'p95_ms': 33.54, 'fps_mean': 35.42, 'mAP50': 0.4899, 'mAP50_95': 0.3244}
+WARNING ⚠️ 'int8' is deprecated and will be removed in the future. Use 'quantize' instead.
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLO11n summary (fused): 100 layers, 2,616,248 parameters, 0 gradients, 2.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolo11n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (5.4 MB)
+OpenVINO: collecting INT8 calibration images from 'data=/home/claude/work/data/coco_traffic/coco_traffic.yaml'
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2370.5±963.2 MB/s, size: 162.1 KB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+INFO:nncf:34 ignored nodes were found by names in the NNCFGraph
+INFO:nncf:Not adding activation input quantizer for operation: 132 __module.model.23/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 195 __module.model.23/aten::view/Reshape_3
+INFO:nncf:Not adding activation input quantizer for operation: 252 __module.model.23/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 300 __module.model.23/aten::view/Reshape_4
+INFO:nncf:Not adding activation input quantizer for operation: 334 __module.model.23/aten::view/Reshape_2
+INFO:nncf:Not adding activation input quantizer for operation: 341 __module.model.23/aten::view/Reshape_5
+INFO:nncf:Not adding activation input quantizer for operation: 139 __module.model.23/aten::cat/Concat
+INFO:nncf:Not adding activation input quantizer for operation: 149 __module.model.23.dfl/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 159 __module.model.23.dfl/aten::transpose/Transpose
+INFO:nncf:Not adding activation input quantizer for operation: 171 __module.model.23.dfl/aten::softmax/Softmax
+INFO:nncf:Not adding activation input quantizer for operation: 183 __module.model.23.dfl.conv/aten::_convolution/Convolution
+INFO:nncf:Not adding activation input quantizer for operation: 194 __module.model.23.dfl/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 205 __module.model.23/prim::ListUnpack/VariadicSplit
+INFO:nncf:Not adding activation input quantizer for operation: 216 __module.model.23/aten::sub/Subtract
+INFO:nncf:Not adding activation input quantizer for operation: 217 __module.model.23/aten::add/Add
+INFO:nncf:Not adding activation input quantizer for operation: 228 __module.model.23/aten::add/Add_1
+238 __module.model.23/aten::div/Divide
+INFO:nncf:Not adding activation input quantizer for operation: 229 __module.model.23/aten::sub/Subtract_1
+INFO:nncf:Not adding activation input quantizer for operation: 239 __module.model.23/aten::cat/Concat_1
+INFO:nncf:Not adding activation input quantizer for operation: 247 __module.model.23/aten::mul/Multiply
+INFO:nncf:Not adding activation input quantizer for operation: 206 __module.model.23/aten::cat/Concat_2
+INFO:nncf:Not adding activation input quantizer for operation: 218 __module.model.23/aten::sigmoid/Sigmoid
+INFO:nncf:Not adding activation input quantizer for operation: 230 __module.model.23/aten::cat/Concat_3
+OpenVINO: export success ✅ 62.5s, saved as '/home/claude/work/models/yolo11n_int8_openvino_model/' (3.2 MB)
+Export complete (62.9s)
+Results saved to /home/claude/work/models/yolo11n_int8_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolo11n_int8_openvino_model/ imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolo11n_int8_openvino_model/ imgsz=416 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolo11n_416_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolo11n_416_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 944.0±150.1 MB/s, size: 156.0 KB)
+                   all        554       5644      0.674      0.433      0.488      0.323
+Speed: 0.9ms preprocess, 14.3ms inference, 0.0ms loss, 2.4ms postprocess per image
+{'model': 'yolo11n', 'imgsz': 416, 'backend': 'OpenVINO INT8', 'mean_ms': 19.02, 'median_ms': 18.52, 'p95_ms': 23.46, 'fps_mean': 52.57, 'mAP50': 0.4882, 'mAP50_95': 0.3228}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 8.7 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2798.3±1084.6 MB/s, size: 240.9 KB)
+                   all        554       5644      0.699      0.482      0.568      0.385
+Speed: 1.6ms preprocess, 112.8ms inference, 0.0ms loss, 3.8ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 640, 'backend': 'PyTorch FP32', 'mean_ms': 108.52, 'median_ms': 106.2, 'p95_ms': 132.9, 'fps_mean': 9.21, 'mAP50': 0.5684, 'mAP50_95': 0.3845}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 8.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (6.2 MB)
+ONNX: starting export with onnx 1.22.0 opset 17...
+ONNX: export success ✅ 0.8s, saved as '/home/claude/work/models/yolov8n.onnx' (12.2 MB)
+Export complete (1.3s)
+Results saved to /home/claude/work/models/yolov8n.onnx
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n.onnx imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n.onnx imgsz=640 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_640.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_640.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1980.5±344.1 MB/s, size: 187.6 KB)
+                   all        554       5644       0.68      0.501       0.57      0.383
+Speed: 2.1ms preprocess, 73.7ms inference, 0.0ms loss, 4.1ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 640, 'backend': 'ONNX Runtime FP32', 'mean_ms': 83.38, 'median_ms': 82.53, 'p95_ms': 89.44, 'fps_mean': 11.99, 'mAP50': 0.5701, 'mAP50_95': 0.3834}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 8.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (6.2 MB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+OpenVINO: export success ✅ 2.2s, saved as '/home/claude/work/models/yolov8n_openvino_model/' (12.3 MB)
+Export complete (2.6s)
+Results saved to /home/claude/work/models/yolov8n_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n_openvino_model/ imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n_openvino_model/ imgsz=640 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_640_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_640_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1012.8±409.8 MB/s, size: 109.9 KB)
+                   all        554       5644       0.68      0.501       0.57      0.383
+Speed: 1.9ms preprocess, 60.8ms inference, 0.0ms loss, 4.0ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 640, 'backend': 'OpenVINO FP32', 'mean_ms': 62.97, 'median_ms': 61.76, 'p95_ms': 69.46, 'fps_mean': 15.88, 'mAP50': 0.5701, 'mAP50_95': 0.3834}
+WARNING ⚠️ 'int8' is deprecated and will be removed in the future. Use 'quantize' instead.
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 8.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (6.2 MB)
+OpenVINO: collecting INT8 calibration images from 'data=/home/claude/work/data/coco_traffic/coco_traffic.yaml'
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1994.5±694.2 MB/s, size: 137.1 KB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+INFO:nncf:34 ignored nodes were found by names in the NNCFGraph
+INFO:nncf:Not adding activation input quantizer for operation: 138 __module.model.22/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 139 __module.model.22/aten::view/Reshape_3
+INFO:nncf:Not adding activation input quantizer for operation: 224 __module.model.22/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 225 __module.model.22/aten::view/Reshape_4
+INFO:nncf:Not adding activation input quantizer for operation: 251 __module.model.22/aten::view/Reshape_2
+INFO:nncf:Not adding activation input quantizer for operation: 252 __module.model.22/aten::view/Reshape_5
+INFO:nncf:Not adding activation input quantizer for operation: 147 __module.model.22/aten::cat/Concat
+INFO:nncf:Not adding activation input quantizer for operation: 159 __module.model.22.dfl/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 170 __module.model.22.dfl/aten::transpose/Transpose
+INFO:nncf:Not adding activation input quantizer for operation: 181 __module.model.22.dfl/aten::softmax/Softmax
+INFO:nncf:Not adding activation input quantizer for operation: 190 __module.model.22.dfl.conv/aten::_convolution/Convolution
+INFO:nncf:Not adding activation input quantizer for operation: 196 __module.model.22.dfl/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 135 __module.model.22/prim::ListUnpack/VariadicSplit
+INFO:nncf:Not adding activation input quantizer for operation: 143 __module.model.22/aten::sub/Subtract
+INFO:nncf:Not adding activation input quantizer for operation: 144 __module.model.22/aten::add/Add
+INFO:nncf:Not adding activation input quantizer for operation: 154 __module.model.22/aten::add/Add_1
+165 __module.model.22/aten::div/Divide
+INFO:nncf:Not adding activation input quantizer for operation: 155 __module.model.22/aten::sub/Subtract_1
+INFO:nncf:Not adding activation input quantizer for operation: 166 __module.model.22/aten::cat/Concat_1
+INFO:nncf:Not adding activation input quantizer for operation: 176 __module.model.22/aten::mul/Multiply
+INFO:nncf:Not adding activation input quantizer for operation: 148 __module.model.22/aten::cat/Concat_2
+INFO:nncf:Not adding activation input quantizer for operation: 160 __module.model.22/aten::sigmoid/Sigmoid
+INFO:nncf:Not adding activation input quantizer for operation: 171 __module.model.22/aten::cat/Concat_3
+OpenVINO: export success ✅ 94.5s, saved as '/home/claude/work/models/yolov8n_int8_openvino_model/' (3.6 MB)
+Export complete (95.0s)
+Results saved to /home/claude/work/models/yolov8n_int8_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n_int8_openvino_model/ imgsz=640 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n_int8_openvino_model/ imgsz=640 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_640_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_640_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 640, 640)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1208.4±574.9 MB/s, size: 233.9 KB)
+                   all        554       5644      0.704      0.485      0.566      0.381
+Speed: 2.0ms preprocess, 29.2ms inference, 0.0ms loss, 3.8ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 640, 'backend': 'OpenVINO INT8', 'mean_ms': 34.49, 'median_ms': 33.72, 'p95_ms': 39.44, 'fps_mean': 29.0, 'mAP50': 0.566, 'mAP50_95': 0.3809}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 8.7 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2027.2±712.3 MB/s, size: 168.2 KB)
+                   all        554       5644      0.649      0.433      0.482      0.318
+Speed: 0.8ms preprocess, 58.5ms inference, 0.0ms loss, 2.2ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 416, 'backend': 'PyTorch FP32', 'mean_ms': 55.32, 'median_ms': 54.78, 'p95_ms': 66.84, 'fps_mean': 18.08, 'mAP50': 0.4816, 'mAP50_95': 0.318}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 3.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (6.2 MB)
+ONNX: starting export with onnx 1.22.0 opset 17...
+ONNX: export success ✅ 0.6s, saved as '/home/claude/work/models/yolov8n.onnx' (12.1 MB)
+Export complete (0.9s)
+Results saved to /home/claude/work/models/yolov8n.onnx
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n.onnx imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n.onnx imgsz=416 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_416.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_416.onnx for ONNX Runtime inference...
+Using ONNX Runtime 1.25.0 with CPUExecutionProvider
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1932.5±325.5 MB/s, size: 145.6 KB)
+                   all        554       5644      0.673      0.419      0.481      0.319
+Speed: 0.9ms preprocess, 32.2ms inference, 0.0ms loss, 2.6ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 416, 'backend': 'ONNX Runtime FP32', 'mean_ms': 36.87, 'median_ms': 36.16, 'p95_ms': 40.47, 'fps_mean': 27.12, 'mAP50': 0.4815, 'mAP50_95': 0.3187}
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 3.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (6.2 MB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/usr/local/lib/python3.11/dist-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+OpenVINO: export success ✅ 2.4s, saved as '/home/claude/work/models/yolov8n_openvino_model/' (12.3 MB)
+Export complete (2.6s)
+Results saved to /home/claude/work/models/yolov8n_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n_openvino_model/ imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n_openvino_model/ imgsz=416 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_416_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_416_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 883.3±425.8 MB/s, size: 162.5 KB)
+                   all        554       5644      0.673      0.419      0.481      0.319
+Speed: 0.8ms preprocess, 24.9ms inference, 0.0ms loss, 2.5ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 416, 'backend': 'OpenVINO FP32', 'mean_ms': 29.03, 'median_ms': 28.58, 'p95_ms': 30.55, 'fps_mean': 34.45, 'mAP50': 0.4815, 'mAP50_95': 0.3187}
+WARNING ⚠️ 'int8' is deprecated and will be removed in the future. Use 'quantize' instead.
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 3.7 GFLOPs
+PyTorch: starting from '/home/claude/work/models/yolov8n.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 84, 3549) (6.2 MB)
+OpenVINO: collecting INT8 calibration images from 'data=/home/claude/work/data/coco_traffic/coco_traffic.yaml'
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2105.9±1324.7 MB/s, size: 151.1 KB)
+OpenVINO: starting export with openvino 2026.3.1-22476-759c5a6ab8c-releases/2026/3...
+INFO:nncf:34 ignored nodes were found by names in the NNCFGraph
+INFO:nncf:Not adding activation input quantizer for operation: 138 __module.model.22/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 139 __module.model.22/aten::view/Reshape_3
+INFO:nncf:Not adding activation input quantizer for operation: 224 __module.model.22/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 225 __module.model.22/aten::view/Reshape_4
+INFO:nncf:Not adding activation input quantizer for operation: 251 __module.model.22/aten::view/Reshape_2
+INFO:nncf:Not adding activation input quantizer for operation: 252 __module.model.22/aten::view/Reshape_5
+INFO:nncf:Not adding activation input quantizer for operation: 147 __module.model.22/aten::cat/Concat
+INFO:nncf:Not adding activation input quantizer for operation: 159 __module.model.22.dfl/aten::view/Reshape
+INFO:nncf:Not adding activation input quantizer for operation: 170 __module.model.22.dfl/aten::transpose/Transpose
+INFO:nncf:Not adding activation input quantizer for operation: 181 __module.model.22.dfl/aten::softmax/Softmax
+INFO:nncf:Not adding activation input quantizer for operation: 190 __module.model.22.dfl.conv/aten::_convolution/Convolution
+INFO:nncf:Not adding activation input quantizer for operation: 196 __module.model.22.dfl/aten::view/Reshape_1
+INFO:nncf:Not adding activation input quantizer for operation: 135 __module.model.22/prim::ListUnpack/VariadicSplit
+INFO:nncf:Not adding activation input quantizer for operation: 143 __module.model.22/aten::sub/Subtract
+INFO:nncf:Not adding activation input quantizer for operation: 144 __module.model.22/aten::add/Add
+INFO:nncf:Not adding activation input quantizer for operation: 154 __module.model.22/aten::add/Add_1
+165 __module.model.22/aten::div/Divide
+INFO:nncf:Not adding activation input quantizer for operation: 155 __module.model.22/aten::sub/Subtract_1
+INFO:nncf:Not adding activation input quantizer for operation: 166 __module.model.22/aten::cat/Concat_1
+INFO:nncf:Not adding activation input quantizer for operation: 176 __module.model.22/aten::mul/Multiply
+INFO:nncf:Not adding activation input quantizer for operation: 148 __module.model.22/aten::cat/Concat_2
+INFO:nncf:Not adding activation input quantizer for operation: 160 __module.model.22/aten::sigmoid/Sigmoid
+INFO:nncf:Not adding activation input quantizer for operation: 171 __module.model.22/aten::cat/Concat_3
+OpenVINO: export success ✅ 49.3s, saved as '/home/claude/work/models/yolov8n_int8_openvino_model/' (3.5 MB)
+Export complete (49.5s)
+Results saved to /home/claude/work/models/yolov8n_int8_openvino_model
+Predict:         yolo predict task=detect model=/home/claude/work/models/yolov8n_int8_openvino_model/ imgsz=416 
+Validate:        yolo val task=detect model=/home/claude/work/models/yolov8n_int8_openvino_model/ imgsz=416 data=coco.yaml  
+Visualize:       https://netron.app
+Loading /home/claude/work/models/yolov8n_416_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Ultralytics 8.4.146 🚀 Python-3.11.15 torch-2.14.0+cu130 CPU (Intel Xeon Processor @ 2.80GHz)
+Loading /home/claude/work/models/yolov8n_416_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+Setting batch=1 input of shape (1, 3, 416, 416)
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1640.5±1186.1 MB/s, size: 232.3 KB)
+                   all        554       5644      0.647      0.426      0.477      0.317
+Speed: 0.9ms preprocess, 13.8ms inference, 0.0ms loss, 2.4ms postprocess per image
+{'model': 'yolov8n', 'imgsz': 416, 'backend': 'OpenVINO INT8', 'mean_ms': 18.76, 'median_ms': 17.69, 'p95_ms': 25.6, 'fps_mean': 53.31, 'mAP50': 0.4774, 'mAP50_95': 0.3167}
+done

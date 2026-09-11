@@ -1,0 +1,24 @@
+{
+  "n_images": 554,
+  "instances": {
+    "stop sign": 42,
+    "truck": 320,
+    "car": 1624,
+    "bus": 225,
+    "person": 2351,
+    "traffic light": 514,
+    "motorcycle": 316,
+    "bicycle": 252
+  },
+  "min_instances": 3,
+  "classes": {
+    "0": "person",
+    "1": "bicycle",
+    "2": "car",
+    "3": "motorcycle",
+    "5": "bus",
+    "7": "truck",
+    "9": "traffic light",
+    "11": "stop sign"
+  }
+}

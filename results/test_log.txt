@@ -1,0 +1,22 @@
+test_budget_invariants_seeded (test_core.CoreTests.test_budget_invariants_seeded) ... ok
+test_constant_velocity_ttc (test_core.CoreTests.test_constant_velocity_ttc) ... ok
+test_description_does_not_invent_lateral_motion (test_core.CoreTests.test_description_does_not_invent_lateral_motion) ... ok
+test_duplicate_id_rejected (test_core.CoreTests.test_duplicate_id_rejected) ... ok
+test_dwell_cannot_bypass_ink (test_core.CoreTests.test_dwell_cannot_bypass_ink) ... ok
+test_invalid_candidate_suppressed (test_core.CoreTests.test_invalid_candidate_suppressed) ... ok
+test_nonclosing_unavailable (test_core.CoreTests.test_nonclosing_unavailable) ... ok
+test_range_prior_sensitivity (test_core.CoreTests.test_range_prior_sensitivity) ... ok
+test_reset_clears_state (test_core.CoreTests.test_reset_clears_state) ... ok
+test_risk_bounded (test_core.CoreTests.test_risk_bounded) ... ok
+test_timestamps_and_height_validated (test_core.CoreTests.test_timestamps_and_height_validated) ... ok
+test_urgent_preempts_dwell (test_core.CoreTests.test_urgent_preempts_dwell) ... ok
+test_bracket_does_not_draw_label (test_integration.RenderingTests.test_bracket_does_not_draw_label) ... ok
+test_pipeline_uses_supplied_time_and_shared_state (test_integration.RenderingTests.test_pipeline_uses_supplied_time_and_shared_state) ... ok
+test_budget_comparator_rejects_infeasible_full_cue (test_integration.ReplayTests.test_budget_comparator_rejects_infeasible_full_cue) ... ok
+test_class_aware_match_rejects_category_error (test_integration.ReplayTests.test_class_aware_match_rejects_category_error) ... ok
+test_expired_identity_restarts_ttc (test_integration.ReplayTests.test_expired_identity_restarts_ttc) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.238s
+
+OK

@@ -1,0 +1,178 @@
+[
+  {
+    "model": "yolo11n",
+    "imgsz": 640,
+    "backend": "PyTorch FP32",
+    "mean_ms": 96.55,
+    "median_ms": 94.06,
+    "p95_ms": 109.24,
+    "fps_mean": 10.36,
+    "mAP50": 0.5808,
+    "mAP50_95": 0.3931
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 640,
+    "backend": "ONNX Runtime FP32",
+    "mean_ms": 72.36,
+    "median_ms": 69.89,
+    "p95_ms": 82.95,
+    "fps_mean": 13.82,
+    "mAP50": 0.5795,
+    "mAP50_95": 0.3897
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 640,
+    "backend": "OpenVINO FP32",
+    "mean_ms": 57.56,
+    "median_ms": 56.64,
+    "p95_ms": 65.42,
+    "fps_mean": 17.37,
+    "mAP50": 0.5795,
+    "mAP50_95": 0.3897
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 640,
+    "backend": "OpenVINO INT8",
+    "mean_ms": 35.77,
+    "median_ms": 34.43,
+    "p95_ms": 43.04,
+    "fps_mean": 27.96,
+    "mAP50": 0.577,
+    "mAP50_95": 0.3867
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 416,
+    "backend": "PyTorch FP32",
+    "mean_ms": 57.09,
+    "median_ms": 55.62,
+    "p95_ms": 70.52,
+    "fps_mean": 17.52,
+    "mAP50": 0.4926,
+    "mAP50_95": 0.3242
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 416,
+    "backend": "ONNX Runtime FP32",
+    "mean_ms": 33.29,
+    "median_ms": 32.79,
+    "p95_ms": 38.84,
+    "fps_mean": 30.04,
+    "mAP50": 0.4899,
+    "mAP50_95": 0.3244
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 416,
+    "backend": "OpenVINO FP32",
+    "mean_ms": 28.23,
+    "median_ms": 27.2,
+    "p95_ms": 33.54,
+    "fps_mean": 35.42,
+    "mAP50": 0.4899,
+    "mAP50_95": 0.3244
+  },
+  {
+    "model": "yolo11n",
+    "imgsz": 416,
+    "backend": "OpenVINO INT8",
+    "mean_ms": 19.02,
+    "median_ms": 18.52,
+    "p95_ms": 23.46,
+    "fps_mean": 52.57,
+    "mAP50": 0.4882,
+    "mAP50_95": 0.3228
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 640,
+    "backend": "PyTorch FP32",
+    "mean_ms": 108.52,
+    "median_ms": 106.2,
+    "p95_ms": 132.9,
+    "fps_mean": 9.21,
+    "mAP50": 0.5684,
+    "mAP50_95": 0.3845
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 640,
+    "backend": "ONNX Runtime FP32",
+    "mean_ms": 83.38,
+    "median_ms": 82.53,
+    "p95_ms": 89.44,
+    "fps_mean": 11.99,
+    "mAP50": 0.5701,
+    "mAP50_95": 0.3834
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 640,
+    "backend": "OpenVINO FP32",
+    "mean_ms": 62.97,
+    "median_ms": 61.76,
+    "p95_ms": 69.46,
+    "fps_mean": 15.88,
+    "mAP50": 0.5701,
+    "mAP50_95": 0.3834
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 640,
+    "backend": "OpenVINO INT8",
+    "mean_ms": 34.49,
+    "median_ms": 33.72,
+    "p95_ms": 39.44,
+    "fps_mean": 29.0,
+    "mAP50": 0.566,
+    "mAP50_95": 0.3809
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 416,
+    "backend": "PyTorch FP32",
+    "mean_ms": 55.32,
+    "median_ms": 54.78,
+    "p95_ms": 66.84,
+    "fps_mean": 18.08,
+    "mAP50": 0.4816,
+    "mAP50_95": 0.318
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 416,
+    "backend": "ONNX Runtime FP32",
+    "mean_ms": 36.87,
+    "median_ms": 36.16,
+    "p95_ms": 40.47,
+    "fps_mean": 27.12,
+    "mAP50": 0.4815,
+    "mAP50_95": 0.3187
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 416,
+    "backend": "OpenVINO FP32",
+    "mean_ms": 29.03,
+    "median_ms": 28.58,
+    "p95_ms": 30.55,
+    "fps_mean": 34.45,
+    "mAP50": 0.4815,
+    "mAP50_95": 0.3187
+  },
+  {
+    "model": "yolov8n",
+    "imgsz": 416,
+    "backend": "OpenVINO INT8",
+    "mean_ms": 18.76,
+    "median_ms": 17.69,
+    "p95_ms": 25.6,
+    "fps_mean": 53.31,
+    "mAP50": 0.4774,
+    "mAP50_95": 0.3167
+  }
+]

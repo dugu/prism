@@ -1,0 +1,18 @@
+# Manuscript and publication assets are intentionally kept outside this repository.
+paper/
+final/
+*.docx
+*.pdf
+*.doc
+*.tex
+*manuscript*
+archive/
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+work/
+data/source_images/
+*.tmp

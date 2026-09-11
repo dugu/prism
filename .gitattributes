@@ -1,0 +1,3 @@
+# Preserve evidence bytes exactly, including recorded CRLF and trailing spaces.
+data/experiment/** -text -whitespace linguist-vendored
+results/** linguist-generated

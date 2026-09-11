@@ -1,0 +1,334 @@
+{
+  "E1": {
+    "selected": "yolo11n@640",
+    "mAP50_95": 39.31,
+    "mAP50": 58.08,
+    "recall": 51.41,
+    "inference_ms": 106.98,
+    "best_model": "yolo11m",
+    "best_mAP": 52.35999999999999,
+    "n_runs": 14
+  },
+  "E2": {
+    "rows": 16,
+    "PyTorch FP32": {
+      "ms": 96.55,
+      "speedup": 1.0,
+      "mAP50_95": 39.31,
+      "dmAP": 0.0
+    },
+    "ONNX Runtime FP32": {
+      "ms": 72.36,
+      "speedup": 1.3343007186290767,
+      "mAP50_95": 38.97,
+      "dmAP": -0.3400000000000014
+    },
+    "OpenVINO FP32": {
+      "ms": 57.56,
+      "speedup": 1.6773801250868658,
+      "mAP50_95": 38.97,
+      "dmAP": -0.3400000000000014
+    },
+    "OpenVINO INT8": {
+      "ms": 35.77,
+      "speedup": 2.699189264746994,
+      "mAP50_95": 38.67,
+      "dmAP": -0.6400000000000017
+    }
+  },
+  "latency": {
+    "perception_track_ms": 111.50981165529512,
+    "risk_ms": 0.40605649440307956,
+    "arbitration_ms": 0.032683154366410005,
+    "total_ms": 111.94855130406461,
+    "downstream_share_pct": 0.3919118592055955
+  },
+  "E3": {
+    "all": {
+      "n": 12222,
+      "range_median_ape_pct": 7.513899011253172,
+      "range_mean_ape_pct": 26.538420608178757,
+      "ttc_median_abs_err_s": 0.5343408515657032,
+      "ttc_n": 840,
+      "risk_pearson": 0.8571132265996045,
+      "mean_iou": 0.8088247465287837
+    },
+    "none": {
+      "n": 3349,
+      "range_median_ape_pct": 6.88455649417633,
+      "range_mean_ape_pct": 25.351620290088643,
+      "ttc_median_abs_err_s": 0.6065337941793816,
+      "ttc_n": 226,
+      "risk_pearson": 0.8608744630432762,
+      "mean_iou": 0.80688665650131
+    },
+    "night": {
+      "n": 2989,
+      "range_median_ape_pct": 7.8558869884935465,
+      "range_mean_ape_pct": 26.804449062460954,
+      "ttc_median_abs_err_s": 0.6095008527383787,
+      "ttc_n": 202,
+      "risk_pearson": 0.8477168206753833,
+      "mean_iou": 0.8100477315763079
+    },
+    "fog": {
+      "n": 2991,
+      "range_median_ape_pct": 7.968171865400178,
+      "range_mean_ape_pct": 27.147851139242217,
+      "ttc_median_abs_err_s": 0.4558275241980976,
+      "ttc_n": 207,
+      "risk_pearson": 0.854045796246001,
+      "mean_iou": 0.8060056842970396
+    },
+    "rain": {
+      "n": 2893,
+      "range_median_ape_pct": 7.494038025703268,
+      "range_mean_ape_pct": 27.007355449873728,
+      "ttc_median_abs_err_s": 0.5264697999456578,
+      "ttc_n": 205,
+      "risk_pearson": 0.8668853917083509,
+      "mean_iou": 0.8127193114545034
+    },
+    "recall_by_cond": {
+      "none": 58.19272652435601,
+      "night": 52.233490143261065,
+      "fog": 51.85590103880631,
+      "rain": 49.44290189039853
+    },
+    "rho_by_cond": {
+      "none": 0.7282939185074717,
+      "night": 0.6650538959339976,
+      "fog": 0.7204793221946189,
+      "rain": 0.6900731893952184
+    },
+    "top1_by_cond": {
+      "none": 0.7193615455920246,
+      "night": 0.6453349429685773,
+      "fog": 0.7039233271240213,
+      "rain": 0.6945838331334133
+    },
+    "uncertainty": {
+      "spearman_u_vs_ape": 0.2397030268337845,
+      "ape_low_quartile_pct": 5.126947693443842,
+      "ape_high_quartile_pct": 12.634984127539717,
+      "iou_low_quartile": 0.913141798988781,
+      "iou_high_quartile": 0.7696376858013019
+    }
+  },
+  "E4_clear": {
+    "PRISM": {
+      "cues_mean": 2.0480004894226274,
+      "ink_mean_pct": 5.216384401635351,
+      "road_occlusion_pct": 2.190043641904772,
+      "clutter_index": 0.007642241176905374,
+      "flicker_per_s": 3.273254879616643,
+      "search_time_s": 0.4488747710078684,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    },
+    "B1-render-all": {
+      "cues_mean": 7.776818959891695,
+      "ink_mean_pct": 10.185913545021336,
+      "road_occlusion_pct": 8.746407700889696,
+      "clutter_index": 0.019663510117354267,
+      "flicker_per_s": 22.68993250350631,
+      "search_time_s": 0.6991205221686687,
+      "critical_coverage": 1.0,
+      "lead_time_s": 1.93125
+    },
+    "B2-topk-conf": {
+      "cues_mean": 4.601811594202898,
+      "ink_mean_pct": 8.469859916626316,
+      "road_occlusion_pct": 6.52342122737257,
+      "clutter_index": 0.015391528963837255,
+      "flicker_per_s": 17.662426221365124,
+      "search_time_s": 0.6068354172452833,
+      "critical_coverage": 0.8240945451546638,
+      "lead_time_s": 1.88125
+    },
+    "B3-topk-near": {
+      "cues_mean": 4.601811594202898,
+      "ink_mean_pct": 8.625000779286177,
+      "road_occlusion_pct": 6.4057030878443895,
+      "clutter_index": 0.01595340252428963,
+      "flicker_per_s": 17.92189569697678,
+      "search_time_s": 0.6068354172452833,
+      "critical_coverage": 0.8960203094777562,
+      "lead_time_s": 1.93125
+    }
+  },
+  "E4_all": {
+    "PRISM": {
+      "cues_mean": 1.935452384169978,
+      "ink_mean_pct": 5.098003443454493,
+      "road_occlusion_pct": 1.9832624815035762,
+      "clutter_index": 0.0077062222229789925,
+      "flicker_per_s": 4.251230252649213,
+      "search_time_s": 0.43990241800401353,
+      "critical_coverage": 0.7781492110770665,
+      "lead_time_s": 1.846875
+    },
+    "B1-render-all": {
+      "cues_mean": 7.126080047383902,
+      "ink_mean_pct": 9.899945346641758,
+      "road_occlusion_pct": 8.428129273573939,
+      "clutter_index": 0.019709218078811763,
+      "flicker_per_s": 24.83474833693704,
+      "search_time_s": 0.6779975500539022,
+      "critical_coverage": 1.0,
+      "lead_time_s": 1.9359374999999999
+    },
+    "B2-topk-conf": {
+      "cues_mean": 4.41766304347826,
+      "ink_mean_pct": 8.36929176881155,
+      "road_occlusion_pct": 6.385310341487809,
+      "clutter_index": 0.015704404226783715,
+      "flicker_per_s": 19.022738672666357,
+      "search_time_s": 0.5969794028660995,
+      "critical_coverage": 0.8396440924665955,
+      "lead_time_s": 1.8656249999999999
+    },
+    "B3-topk-near": {
+      "cues_mean": 4.41766304347826,
+      "ink_mean_pct": 8.494889379770804,
+      "road_occlusion_pct": 6.320654716523011,
+      "clutter_index": 0.016191031007868287,
+      "flicker_per_s": 20.194358004129654,
+      "search_time_s": 0.5969794028660995,
+      "critical_coverage": 0.8889251620435115,
+      "lead_time_s": 1.9359374999999999
+    }
+  },
+  "E5": {
+    "PRISM": {
+      "cues_mean": 2.0480004894226274,
+      "ink_mean_pct": 5.216384401635351,
+      "road_occlusion_pct": 2.190043641904772,
+      "clutter_index": 0.007642241176905374,
+      "flicker_per_s": 3.273254879616643,
+      "search_time_s": 0.4488747710078684,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    },
+    "A1-no-hysteresis": {
+      "cues_mean": 1.7066505473741624,
+      "ink_mean_pct": 4.922411556244075,
+      "road_occlusion_pct": 2.1282873457339284,
+      "clutter_index": 0.007413525566177893,
+      "flicker_per_s": 5.032719485351411,
+      "search_time_s": 0.4143378865938162,
+      "critical_coverage": 0.6462646687894074,
+      "lead_time_s": 1.81875
+    },
+    "A2-no-foveal": {
+      "cues_mean": 2.0480004894226274,
+      "ink_mean_pct": 5.233859413259991,
+      "road_occlusion_pct": 2.2015853102439933,
+      "clutter_index": 0.007767857364699664,
+      "flicker_per_s": 3.1621437685055325,
+      "search_time_s": 0.4488747710078684,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    },
+    "A3-no-unc-gate": {
+      "cues_mean": 2.0480004894226274,
+      "ink_mean_pct": 5.216552122890571,
+      "road_occlusion_pct": 2.190043641904772,
+      "clutter_index": 0.007819509937909187,
+      "flicker_per_s": 3.273254879616643,
+      "search_time_s": 0.4488747710078684,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    },
+    "A4-no-ink-budget": {
+      "cues_mean": 2.0855004894226274,
+      "ink_mean_pct": 5.239900770992344,
+      "road_occlusion_pct": 2.2233473292174466,
+      "clutter_index": 0.007987380384157743,
+      "flicker_per_s": 3.1065882129499762,
+      "search_time_s": 0.4503436184265764,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    },
+    "A5-k3": {
+      "cues_mean": 1.7672713227559609,
+      "ink_mean_pct": 5.094173224752374,
+      "road_occlusion_pct": 1.951660555576313,
+      "clutter_index": 0.007067983731575697,
+      "flicker_per_s": 3.3687409907277543,
+      "search_time_s": 0.4340955245099856,
+      "critical_coverage": 0.7507394893070835,
+      "lead_time_s": 1.81875
+    },
+    "A6-k8": {
+      "cues_mean": 2.0855004894226274,
+      "ink_mean_pct": 5.239871906586831,
+      "road_occlusion_pct": 2.2233473292174466,
+      "clutter_index": 0.007585291189186246,
+      "flicker_per_s": 3.1065882129499762,
+      "search_time_s": 0.4503436184265764,
+      "critical_coverage": 0.8119097020730408,
+      "lead_time_s": 1.81875
+    }
+  },
+  "E4_reduction_vs_B1_pct": {
+    "cues_mean": 73.66531868640608,
+    "ink_mean_pct": 48.7882517500356,
+    "road_occlusion_pct": 74.96064993995194,
+    "clutter_index": 61.13490861349002,
+    "flicker_per_s": 85.57397700891873,
+    "search_time_s": 35.79436495220297
+  },
+  "E4_reduction_vs_B2_pct": {
+    "cues_mean": 55.495777097815505,
+    "ink_mean_pct": 38.41238871736709,
+    "road_occlusion_pct": 66.42798976838641,
+    "clutter_index": 50.347745211921485,
+    "flicker_per_s": 81.46769397028142,
+    "search_time_s": 26.030228583966636
+  },
+  "E4_coverage_material_hazard": {
+    "PRISM": 0.9230092832843222,
+    "B1-render-all": 1.0,
+    "B2-topk-conf": 0.7985003413187756,
+    "B3-topk-near": 0.9497491783428472
+  },
+  "E4_coverage_detected": {
+    "PRISM": 0.8119097020730408,
+    "B1-render-all": 1.0,
+    "B2-topk-conf": 0.8240945451546638,
+    "B3-topk-near": 0.8960203094777562
+  },
+  "E4_lead_time_s": {
+    "PRISM": 1.3666666666666665,
+    "B1-render-all": 1.5,
+    "B2-topk-conf": 1.4333333333333336,
+    "B3-topk-near": 1.5
+  },
+  "dataset": {
+    "n_images": 554,
+    "instances": {
+      "stop sign": 42,
+      "truck": 320,
+      "car": 1624,
+      "bus": 225,
+      "person": 2351,
+      "traffic light": 514,
+      "motorcycle": 316,
+      "bicycle": 252
+    },
+    "min_instances": 3,
+    "classes": {
+      "0": "person",
+      "1": "bicycle",
+      "2": "car",
+      "3": "motorcycle",
+      "5": "bus",
+      "7": "truck",
+      "9": "traffic light",
+      "11": "stop sign"
+    }
+  },
+  "n_sequences": 32,
+  "n_frames": 2580
+}

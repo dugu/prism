@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this repository version when using the PRISM implementation or reproducible evaluation."
+type: software
+title: "PRISM Perception-to-Risk Interface for Situational Mediation"
+authors:
+  - family-names: "Duguleană"
+    given-names: "Mihai"
+  - family-names: "Ghiță"
+    given-names: "Tiberiu"
+repository-code: "https://github.com/dugu/prism"
+version: "0.1.0"
+date-released: "2026-09-11"
