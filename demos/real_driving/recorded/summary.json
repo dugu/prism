@@ -1,0 +1,58 @@
+{
+  "frames": 1200,
+  "playback_duration_s": 60.0,
+  "acquisition_duration_s": 59.94915999999648,
+  "timestamp_spacing_s": {
+    "min": 0.04871199999615783,
+    "median": 0.04999900000257185,
+    "max": 0.05127599999832455
+  },
+  "camera": {
+    "width": 1164,
+    "height": 874,
+    "fx": 910.0000000000001,
+    "hfov_deg": 65.20274552878999
+  },
+  "config": {
+    "model": "yolo11n.pt",
+    "imgsz": 640,
+    "confidence": 0.25,
+    "fps": 20.0,
+    "arbiter": {
+      "ink_budget": 0.055,
+      "max_cues": 5,
+      "r_on": 0.24,
+      "r_off": 0.15,
+      "dwell_frames": 8,
+      "hysteresis_bonus": 0.06,
+      "foveal_box": [
+        0.34,
+        0.4,
+        0.66,
+        0.78
+      ],
+      "foveal_penalty": 0.45,
+      "overlap_iou": 0.55,
+      "use_hysteresis": true,
+      "use_foveal": true,
+      "use_uncertainty_gate": true,
+      "u_gate": 0.72
+    }
+  },
+  "mean_tracks": 6.6175,
+  "mean_prism_cues": 0.78,
+  "mean_risk_cues": 4.663333333333333,
+  "prism_zero_cue_frames": 509,
+  "prism_max_cues": 4,
+  "prism_max_surrogate_cost": 0.020900000000000002,
+  "processing_note": "Offline PyTorch CPU run, not a reproduction of manuscript backend latency. No ground-truth validation.",
+  "source_sha256": {
+    "video.hevc": "1551393e01bea2dc149d7f01dcbea6e7909f1436b0ddcacf8a3bc5654335cb87",
+    "README-comma2k19.md": "c4dd5833ea9dc1530c18e8a1c3edd13345d9e139d4c8357e319c33c8a4442a34",
+    "source.json": "ee2f5d1f7aa37e24d4e3d529bce7959ec20b9ad59c75649120dcfbed5c1b08c8",
+    "yolo11n.pt": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "camera_intrinsics.txt": "5cd6a5eeeb97e5550b6daff947dce7588f036d2c2b017462f85bc9e9862323c2",
+    "LICENSE-comma2k19.txt": "71381aa1c6d9e374bfa7f7797f745c0d09fdb52ce1ee9dcae6ca618217b248d4",
+    "frame_times.npy": "2bec8428f9302b30a7edef3b86de0bc797c77e6964f404b3d982af1ce4dfcb5d"
+  }
+}

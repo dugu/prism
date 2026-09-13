@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "ultralytics": "8.4.146",
+  "torch": "2.14.0",
+  "opencv": "5.0.0",
+  "numpy": "2.5.3",
+  "torch_threads": 2,
+  "device": "cpu",
+  "backend": "PyTorch FP32",
+  "repository_commit": "6a2c31083ef71882accaaef3f5ec3a5fed9f9776"
+}

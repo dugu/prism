@@ -1,0 +1,9 @@
+{
+  "capture_date": "2026-09-13",
+  "source": "sysctl on the local host used for the recorded video run; captured separately from that run",
+  "cpu": "Apple M5",
+  "physical_cores": 10,
+  "memory_bytes": 17179869184,
+  "inference_device": "cpu",
+  "torch_threads": 2
+}

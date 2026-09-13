@@ -2,7 +2,15 @@
 
 **Perception-to-Risk Interface for Situational Mediation** is a research prototype connecting object detection, temporal monocular state, heuristic priority, and selective image-aligned cues for vehicle interfaces.
 
-This repository contains implementation, experiment records, tests, and reproducible evaluation. The manuscript and publication figures are intentionally not hosted here.
+This repository contains implementation, experiment records, tests, and reproducible evaluation.
+
+## Real driving video
+
+[![Watch PRISM on real driving video](demos/real_driving/assets/preview.jpg)](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4)
+
+**[Watch the synchronized comparison](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4)** · [PRISM overlay](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving.mp4) · [Data and reproduction instructions](demos/real_driving/README.md)
+
+A real 60-second comma2k19 recording is processed through YOLO11n, ByteTrack, temporal state, and PRISM. The demonstration preserves the default algorithm's behaviour, including false detections on the recording vehicle. It contains 1200 frames and compares identical observations across displays; it is not a labelled safety benchmark. Recorded per-frame tracks, decisions, camera metadata, timing summaries, and verification scripts are included in `demos/real_driving`.
 
 ## Reproduce the results
 
@@ -29,7 +37,7 @@ The complete suite has **17 tests**: 12 core tests, three replay/matching tests,
 
 ## What the evaluation computes
 
-The fixed perception cache contains 2580 frames: eight source scenes under four correlated image conditions. Temporal depth, TTC, priority, quality, and cue selection are reconstructed from boxes, confidence, identities, and timestamps. Previously stored TTC or priority estimates are not reused for the final comparison.
+The fixed perception cache contains 2580 frames: eight source scenes under four correlated image conditions. Temporal depth, TTC, priority, quality, and cue selection are reconstructed from boxes, confidence, identities, and timestamps.
 
 The policies are PRISM, render-all, and budget-constrained confidence, risk, nearest-object, and TTC rankings. Three component ablations disable persistence, central attenuation, or the quality gate individually. Two matched-count comparisons are diagnostics supplied with PRISM's per-frame output count; they are not independent deployment policies.
 
@@ -55,6 +63,7 @@ The reference is the largest heuristic priority on generative states, with eligi
 - `data/experiment/`: supplied raw results, traces, cached detections, labels, manifests, environment capture, selected model exports, and logs.
 - `results/`: final summary, per-scene/per-frame results, matched-state observations, and local test logs.
 - `docs/`: protocol, provenance, and dependency/source notices.
+- `demos/real_driving/`: real-video records, source metadata, generation and verification scripts.
 
 ## Results and provenance
 
@@ -68,4 +77,4 @@ See [the protocol](docs/protocol.md) and [data provenance](docs/data_provenance.
 
 This is an offline research prototype. Synthetic depth uses the same class-height assumptions as the estimator. Camera-image alignment does not establish physical head-up-display registration. No participant study or complete target-device capture-to-display timing is supplied. No claim of calibrated collision probability or validated on-road warning performance is made.
 
-Third-party images and pretrained weights retain their own terms; see [source notices](docs/third_party.md). Source photographs and manuscript files are excluded from Git.
+Third-party images and pretrained weights retain their own terms; see [source notices](docs/third_party.md). Original media are referenced through source URLs and checksums.

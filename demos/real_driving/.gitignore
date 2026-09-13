@@ -1,0 +1,6 @@
+output/
+.venv/
+source/*.hevc
+source/*.pt
+.config/
+.mpl/

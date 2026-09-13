@@ -1,0 +1,24 @@
+{
+  "replayed_frames": 1200,
+  "all_states_and_policy_decisions_match": true,
+  "videos": {
+    "PRISM_real_driving.mp4": {
+      "decoded_frames": 1200,
+      "fps": 20.0,
+      "dimensions": [
+        1164,
+        1014
+      ],
+      "duration_s": 60.0
+    },
+    "PRISM_real_driving_comparison.mp4": {
+      "decoded_frames": 1200,
+      "fps": 20.0,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "duration_s": 60.0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/commaai/comma2k19",
+  "commit": "4c7f1a6e1957745beadc1def0e7225f559b09a2a",
+  "segment": "Example_1/b0c9d2329ad1606b|2018-08-02--08-34-47/40/",
+  "files": {
+    "video.hevc": "Example_1/b0c9d2329ad1606b|2018-08-02--08-34-47/40/video.hevc",
+    "frame_times.npy": "Example_1/b0c9d2329ad1606b|2018-08-02--08-34-47/40/global_pose/frame_times",
+    "camera_intrinsics.txt": "notebooks/camera_intrinsics.txt",
+    "LICENSE-comma2k19.txt": "LICENSE",
+    "README-comma2k19.md": "README.md"
+  }
+}
