@@ -2,9 +2,9 @@
 
 The 60-second comma2k19 example is processed with YOLO11n, ByteTrack, PRISM temporal state and the default cue policy. Both videos contain 1200 frames at the acquisition rate of 20 FPS. The four-panel comparison shows the original image, all tracked boxes, risk-budget selection, and PRISM on identical observations.
 
-[Watch or download the comparison video](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4) · [PRISM overlay video](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving.mp4)
+**[▶ Watch the demonstration on YouTube](https://youtu.be/pXq9bM1Bdxk)** · [Download the comparison MP4](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4) · [PRISM overlay video](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving.mp4)
 
-[![Real driving comparison at 10 seconds](assets/preview.jpg)](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4)
+[![Watch the PRISM demonstration on YouTube](assets/preview.jpg)](https://youtu.be/pXq9bM1Bdxk)
 
 ## Recorded data
 

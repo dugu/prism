@@ -6,9 +6,9 @@ This repository contains implementation, experiment records, tests, and reproduc
 
 ## Real driving video
 
-[![Watch PRISM on real driving video](demos/real_driving/assets/preview.jpg)](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4)
+[![Watch PRISM on real driving video](demos/real_driving/assets/preview.jpg)](https://youtu.be/pXq9bM1Bdxk)
 
-**[Watch the synchronized comparison](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4)** · [PRISM overlay](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving.mp4) · [Data and reproduction instructions](demos/real_driving/README.md)
+**[▶ Watch the demonstration on YouTube](https://youtu.be/pXq9bM1Bdxk)** · [Download the comparison MP4](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving_comparison.mp4) · [PRISM overlay](https://github.com/dugu/prism/releases/download/real-driving-v1/PRISM_real_driving.mp4) · [Data and reproduction instructions](demos/real_driving/README.md)
 
 A real 60-second comma2k19 recording is processed through YOLO11n, ByteTrack, temporal state, and PRISM. The demonstration preserves the default algorithm's behaviour, including false detections on the recording vehicle. It contains 1200 frames and compares identical observations across displays; it is not a labelled safety benchmark. Recorded per-frame tracks, decisions, camera metadata, timing summaries, and verification scripts are included in `demos/real_driving`.
 
