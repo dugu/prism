@@ -1,0 +1,383 @@
+{
+  "schedule": "Frames 0,20,...,1180, one frame per second. Screen: width>.75W, top>.55H, bottom>.95H. Narrow ego-region diagnostic only.",
+  "sample": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "screened_candidates": [
+        {
+          "tid": 14,
+          "box": [
+            3.9803593158721924,
+            615.9059448242188,
+            1161.816162109375,
+            864.0736694335938
+          ],
+          "cls": "car",
+          "conf": 0.42244723439216614,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "time_s": 0.9999959999986459,
+      "screened_candidates": []
+    },
+    {
+      "frame": 40,
+      "time_s": 1.9999820000011823,
+      "screened_candidates": []
+    },
+    {
+      "frame": 60,
+      "time_s": 2.999951999998302,
+      "screened_candidates": []
+    },
+    {
+      "frame": 80,
+      "time_s": 3.9999529999986407,
+      "screened_candidates": []
+    },
+    {
+      "frame": 100,
+      "time_s": 4.99992999999813,
+      "screened_candidates": []
+    },
+    {
+      "frame": 120,
+      "time_s": 5.999942999995255,
+      "screened_candidates": []
+    },
+    {
+      "frame": 140,
+      "time_s": 6.999897000001511,
+      "screened_candidates": []
+    },
+    {
+      "frame": 160,
+      "time_s": 7.99988399999711,
+      "screened_candidates": []
+    },
+    {
+      "frame": 180,
+      "time_s": 8.999867999998969,
+      "screened_candidates": [
+        {
+          "tid": 532,
+          "box": [
+            4.165976047515869,
+            615.0271606445312,
+            1162.13916015625,
+            863.9847412109375
+          ],
+          "cls": "car",
+          "conf": 0.2716522514820099,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 200,
+      "time_s": 9.999847999999474,
+      "screened_candidates": [
+        {
+          "tid": 532,
+          "box": [
+            2.116266965866089,
+            615.4819946289062,
+            1164.0,
+            864.1300048828125
+          ],
+          "cls": "car",
+          "conf": 0.2838236689567566,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 220,
+      "time_s": 10.999845999998797,
+      "screened_candidates": []
+    },
+    {
+      "frame": 240,
+      "time_s": 11.999846999999136,
+      "screened_candidates": [
+        {
+          "tid": 532,
+          "box": [
+            3.918710470199585,
+            615.1266479492188,
+            1163.15478515625,
+            864.7915649414062
+          ],
+          "cls": "car",
+          "conf": 0.2838062345981598,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 260,
+      "time_s": 12.999829000000318,
+      "screened_candidates": []
+    },
+    {
+      "frame": 280,
+      "time_s": 13.999798999997438,
+      "screened_candidates": []
+    },
+    {
+      "frame": 300,
+      "time_s": 14.999787000000651,
+      "screened_candidates": []
+    },
+    {
+      "frame": 320,
+      "time_s": 15.99978800000099,
+      "screened_candidates": []
+    },
+    {
+      "frame": 340,
+      "time_s": 16.999770999995235,
+      "screened_candidates": []
+    },
+    {
+      "frame": 360,
+      "time_s": 17.999752999996417,
+      "screened_candidates": []
+    },
+    {
+      "frame": 380,
+      "time_s": 18.99972600000183,
+      "screened_candidates": []
+    },
+    {
+      "frame": 400,
+      "time_s": 19.999746000001323,
+      "screened_candidates": [
+        {
+          "tid": 1312,
+          "box": [
+            3.42526912689209,
+            616.422607421875,
+            1150.7061767578125,
+            864.6985473632812
+          ],
+          "cls": "car",
+          "conf": 0.38688361644744873,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 420,
+      "time_s": 20.99970300000132,
+      "screened_candidates": []
+    },
+    {
+      "frame": 440,
+      "time_s": 21.999690999997256,
+      "screened_candidates": [
+        {
+          "tid": 1312,
+          "box": [
+            5.7968268394470215,
+            617.4005737304688,
+            1161.0628662109375,
+            864.6156616210938
+          ],
+          "cls": "car",
+          "conf": 0.27616938948631287,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "frame": 460,
+      "time_s": 22.999668999997084,
+      "screened_candidates": []
+    },
+    {
+      "frame": 480,
+      "time_s": 23.99968799999624,
+      "screened_candidates": []
+    },
+    {
+      "frame": 500,
+      "time_s": 24.999649999997928,
+      "screened_candidates": []
+    },
+    {
+      "frame": 520,
+      "time_s": 25.99962499999674,
+      "screened_candidates": []
+    },
+    {
+      "frame": 540,
+      "time_s": 26.99961500000063,
+      "screened_candidates": []
+    },
+    {
+      "frame": 560,
+      "time_s": 27.999629999998433,
+      "screened_candidates": []
+    },
+    {
+      "frame": 580,
+      "time_s": 28.999597000001813,
+      "screened_candidates": []
+    },
+    {
+      "frame": 600,
+      "time_s": 29.999573000000964,
+      "screened_candidates": []
+    },
+    {
+      "frame": 620,
+      "time_s": 30.999558999996225,
+      "screened_candidates": []
+    },
+    {
+      "frame": 640,
+      "time_s": 31.99956199999724,
+      "screened_candidates": []
+    },
+    {
+      "frame": 660,
+      "time_s": 32.999526999999944,
+      "screened_candidates": []
+    },
+    {
+      "frame": 680,
+      "time_s": 33.99951599999622,
+      "screened_candidates": []
+    },
+    {
+      "frame": 700,
+      "time_s": 34.99952399999893,
+      "screened_candidates": []
+    },
+    {
+      "frame": 720,
+      "time_s": 35.999486000000616,
+      "screened_candidates": []
+    },
+    {
+      "frame": 740,
+      "time_s": 36.99947599999723,
+      "screened_candidates": []
+    },
+    {
+      "frame": 760,
+      "time_s": 37.99945999999909,
+      "screened_candidates": []
+    },
+    {
+      "frame": 780,
+      "time_s": 38.99946199999977,
+      "screened_candidates": []
+    },
+    {
+      "frame": 800,
+      "time_s": 39.999432999997225,
+      "screened_candidates": []
+    },
+    {
+      "frame": 820,
+      "time_s": 40.9994200000001,
+      "screened_candidates": []
+    },
+    {
+      "frame": 840,
+      "time_s": 41.99940400000196,
+      "screened_candidates": []
+    },
+    {
+      "frame": 860,
+      "time_s": 42.99939599999925,
+      "screened_candidates": []
+    },
+    {
+      "frame": 880,
+      "time_s": 43.99940200000128,
+      "screened_candidates": []
+    },
+    {
+      "frame": 900,
+      "time_s": 44.99938100000145,
+      "screened_candidates": []
+    },
+    {
+      "frame": 920,
+      "time_s": 45.99934199999552,
+      "screened_candidates": []
+    },
+    {
+      "frame": 940,
+      "time_s": 46.999363999995694,
+      "screened_candidates": []
+    },
+    {
+      "frame": 960,
+      "time_s": 47.999340999995184,
+      "screened_candidates": []
+    },
+    {
+      "frame": 980,
+      "time_s": 48.99930499999755,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1000,
+      "time_s": 49.999291000000085,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1020,
+      "time_s": 50.999277999995684,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1040,
+      "time_s": 51.999259999996866,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1060,
+      "time_s": 52.999253999994835,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1080,
+      "time_s": 53.99924199999805,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1100,
+      "time_s": 54.99922499999957,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1120,
+      "time_s": 55.99921199999517,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1140,
+      "time_s": 56.999197999997705,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1160,
+      "time_s": 57.99919299999601,
+      "screened_candidates": []
+    },
+    {
+      "frame": 1180,
+      "time_s": 58.99917999999889,
+      "screened_candidates": []
+    }
+  ]
+}

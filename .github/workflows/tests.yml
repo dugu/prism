@@ -16,4 +16,5 @@ jobs:
       - run: python scripts/verify_inputs.py
       - run: python scripts/evaluate.py
       - run: python scripts/check_results.py
+      - run: python scripts/check_extended.py
       - run: python demos/real_driving/verify_demo.py --decisions-only

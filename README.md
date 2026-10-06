@@ -33,7 +33,7 @@ pip install -r requirements-render.txt
 python -m unittest discover -s tests -v
 ```
 
-The complete suite has **17 tests**: 12 core tests, three replay/matching tests, and two OpenCV integration tests. Without OpenCV, the latter two are skipped explicitly. The pipeline test uses a mock detector and does not establish detector performance.
+The complete suite has **22 tests**: 12 core tests, three replay/matching tests, five comparator/temporal-metric tests, and two OpenCV integration tests. Without OpenCV, the latter two are skipped explicitly. The pipeline test uses a mock detector and does not establish detector performance.
 
 ## What the evaluation computes
 
@@ -43,12 +43,17 @@ The policies are PRISM, render-all, and budget-constrained confidence, risk, nea
 
 All budget-constrained policies use a cue-count limit of five, a surrogate-cost limit of 0.055, identical detail-level rules, and box-overlap rejection. The cost limit is not a measured pixel-occupancy limit.
 
-| Clear-condition policy | Mean cues | Reference displayed / eligible | End-to-end coverage |
-|---|---:|---:|---:|
-| PRISM | 2.06 | 213 / 325 | 65.5% |
-| Risk budget | 4.55 | 218 / 325 | 67.1% |
-| Confidence budget | 4.55 | 170 / 325 | 52.3% |
-| Render all | 7.78 | 227 / 325 | 69.8% |
+| Clear-condition policy | Mean cues | Reference shown / eligible | Transitions/s | Painted pixels % |
+|---|---:|---:|---:|---:|
+| Risk budget | 4.55 | 218 / 325 | 18.80 | 1.210 |
+| Risk + threshold | 1.73 | 174 / 325 | 4.97 | 0.814 |
+| Risk + hysteresis | 2.03 | 213 / 325 | 3.68 | 0.867 |
+| Risk + dwell | 2.06 | 213 / 325 | 3.24 | 0.868 |
+| PRISM | 2.06 | 213 / 325 | 3.46 | 0.846 |
+
+Persistence explains much of the change. Simpler dwell ranking matches clear-scene retention and cue count with fewer transitions; PRISM paints slightly less area. A 360-configuration exploratory study finds preference-dependent trade-offs, not consistent superiority. See [extended evaluation](results/extended/README.md) for grouped scene selection, temporal omissions, occupancy and geometry stress tests.
+
+A [paired geometry-to-selection diagnostic](results/revision_20261006/README.md) substitutes true versus estimated geometry while holding other candidate attributes fixed. It measures selection consistency under prescribed competition, not road-hazard accuracy.
 
 The reference is the largest heuristic priority on generative states, with eligibility threshold 0.35. Coverage includes missed detections; it is not independently labelled collision-hazard recall. Finite TTC estimates have a median error of 0.455 s for 840 of 1449 eligible matched observations (58.0% availability).
 

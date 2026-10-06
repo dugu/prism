@@ -1,0 +1,49 @@
+{
+  "annotator": "Codex image inspection, 14 September 2026; not independently human-validated",
+  "reviewed_frames": 60,
+  "scope": "Only geometric-screen candidates are labelled. Frames without candidates are not labelled free of other false detections. No tracking ground truth.",
+  "annotations": [
+    {
+      "frame": 0,
+      "tid": 14,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    },
+    {
+      "frame": 180,
+      "tid": 532,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    },
+    {
+      "frame": 200,
+      "tid": 532,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    },
+    {
+      "frame": 240,
+      "tid": 532,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    },
+    {
+      "frame": 400,
+      "tid": 1312,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    },
+    {
+      "frame": 440,
+      "tid": 1312,
+      "assessment": "visible_ego_vehicle_region",
+      "selected": false,
+      "note": "Yellow screened box covers the recording vehicle hood/dashboard region, not an external vehicle."
+    }
+  ]
+}

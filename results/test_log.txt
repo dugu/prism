@@ -15,8 +15,13 @@ test_pipeline_uses_supplied_time_and_shared_state (test_integration.RenderingTes
 test_budget_comparator_rejects_infeasible_full_cue (test_integration.ReplayTests.test_budget_comparator_rejects_infeasible_full_cue) ... ok
 test_class_aware_match_rejects_category_error (test_integration.ReplayTests.test_class_aware_match_rejects_category_error) ... ok
 test_expired_identity_restarts_ttc (test_integration.ReplayTests.test_expired_identity_restarts_ttc) ... ok
+test_default_factory_matches_original_on_adversarial_history (test_study.StudyTests.test_default_factory_matches_original_on_adversarial_history) ... ok
+test_dwell_is_preemptible_by_urgent_object (test_study.StudyTests.test_dwell_is_preemptible_by_urgent_object) ... ok
+test_hysteresis_keeps_low_score_but_threshold_does_not (test_study.StudyTests.test_hysteresis_keeps_low_score_but_threshold_does_not) ... ok
+test_infeasible_urgent_not_admitted (test_study.StudyTests.test_infeasible_urgent_not_admitted) ... ok
+test_missing_and_switching_split_conditional_bouts (test_study.StudyTests.test_missing_and_switching_split_conditional_bouts) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.238s
+Ran 22 tests in 1.274s
 
 OK

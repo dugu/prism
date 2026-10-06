@@ -1,0 +1,206 @@
+{
+  "summary": [
+    {
+      "condition": "all",
+      "family": "threshold",
+      "sequence_mean_painted_pct": 0.7691297985353489,
+      "frame_p95_painted_pct": 2.4515046296296283,
+      "sequence_mean_overlap_pct": 0.007879538459141373,
+      "frame_max_painted_pct": 4.038628472222222
+    },
+    {
+      "condition": "all",
+      "family": "hysteresis",
+      "sequence_mean_painted_pct": 0.8365570121419287,
+      "frame_p95_painted_pct": 2.465313946759259,
+      "sequence_mean_overlap_pct": 0.009748786875259005,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "all",
+      "family": "dwell",
+      "sequence_mean_painted_pct": 0.8389342645584514,
+      "frame_p95_painted_pct": 2.4660879629629626,
+      "sequence_mean_overlap_pct": 0.009519796062439578,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "all",
+      "family": "PRISM",
+      "sequence_mean_painted_pct": 0.8236988848645214,
+      "frame_p95_painted_pct": 2.39431423611111,
+      "sequence_mean_overlap_pct": 0.009099030244538344,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "all",
+      "family": "risk_budget",
+      "sequence_mean_painted_pct": 1.19139417750758,
+      "frame_p95_painted_pct": 2.50689380787037,
+      "sequence_mean_overlap_pct": 0.014767016746753016,
+      "frame_max_painted_pct": 4.128472222222222
+    },
+    {
+      "condition": "none",
+      "family": "threshold",
+      "sequence_mean_painted_pct": 0.813755817174952,
+      "frame_p95_painted_pct": 2.4736400462962957,
+      "sequence_mean_overlap_pct": 0.009405813812866773,
+      "frame_max_painted_pct": 4.038628472222222
+    },
+    {
+      "condition": "none",
+      "family": "hysteresis",
+      "sequence_mean_painted_pct": 0.86655194270374,
+      "frame_p95_painted_pct": 2.4766203703703704,
+      "sequence_mean_overlap_pct": 0.01038015970688362,
+      "frame_max_painted_pct": 4.038628472222222
+    },
+    {
+      "condition": "none",
+      "family": "dwell",
+      "sequence_mean_painted_pct": 0.8680405223478374,
+      "frame_p95_painted_pct": 2.482841435185185,
+      "sequence_mean_overlap_pct": 0.010274064027871274,
+      "frame_max_painted_pct": 3.7826967592592595
+    },
+    {
+      "condition": "none",
+      "family": "PRISM",
+      "sequence_mean_painted_pct": 0.8456354458303476,
+      "frame_p95_painted_pct": 2.4736400462962957,
+      "sequence_mean_overlap_pct": 0.009663210118406254,
+      "frame_max_painted_pct": 3.7826967592592595
+    },
+    {
+      "condition": "none",
+      "family": "risk_budget",
+      "sequence_mean_painted_pct": 1.2096583978644146,
+      "frame_p95_painted_pct": 2.507060185185185,
+      "sequence_mean_overlap_pct": 0.015445984686822564,
+      "frame_max_painted_pct": 4.038628472222222
+    },
+    {
+      "condition": "night",
+      "family": "threshold",
+      "sequence_mean_painted_pct": 0.7399843953140057,
+      "frame_p95_painted_pct": 2.462471064814814,
+      "sequence_mean_overlap_pct": 0.006734542270266488,
+      "frame_max_painted_pct": 3.3142361111111107
+    },
+    {
+      "condition": "night",
+      "family": "hysteresis",
+      "sequence_mean_painted_pct": 0.7953797969522589,
+      "frame_p95_painted_pct": 2.481452546296296,
+      "sequence_mean_overlap_pct": 0.008590561541107712,
+      "frame_max_painted_pct": 3.3142361111111107
+    },
+    {
+      "condition": "night",
+      "family": "dwell",
+      "sequence_mean_painted_pct": 0.7988492579218754,
+      "frame_p95_painted_pct": 2.5024305555555553,
+      "sequence_mean_overlap_pct": 0.008584034271510606,
+      "frame_max_painted_pct": 3.177083333333333
+    },
+    {
+      "condition": "night",
+      "family": "PRISM",
+      "sequence_mean_painted_pct": 0.778943859902328,
+      "frame_p95_painted_pct": 2.3759259259259258,
+      "sequence_mean_overlap_pct": 0.008010755915029125,
+      "frame_max_painted_pct": 3.1504629629629632
+    },
+    {
+      "condition": "night",
+      "family": "risk_budget",
+      "sequence_mean_painted_pct": 1.167876594210684,
+      "frame_p95_painted_pct": 2.4901620370370368,
+      "sequence_mean_overlap_pct": 0.014454759246652784,
+      "frame_max_painted_pct": 3.767939814814815
+    },
+    {
+      "condition": "fog",
+      "family": "threshold",
+      "sequence_mean_painted_pct": 0.8078943505445169,
+      "frame_p95_painted_pct": 2.5387152777777753,
+      "sequence_mean_overlap_pct": 0.009414477276193422,
+      "frame_max_painted_pct": 4.005787037037037
+    },
+    {
+      "condition": "fog",
+      "family": "hysteresis",
+      "sequence_mean_painted_pct": 0.9043505126241639,
+      "frame_p95_painted_pct": 2.5536747685185186,
+      "sequence_mean_overlap_pct": 0.011725663849541523,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "fog",
+      "family": "dwell",
+      "sequence_mean_painted_pct": 0.9082268733848637,
+      "frame_p95_painted_pct": 2.483015046296295,
+      "sequence_mean_overlap_pct": 0.01139272124491853,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "fog",
+      "family": "PRISM",
+      "sequence_mean_painted_pct": 0.9023654889970036,
+      "frame_p95_painted_pct": 2.5387152777777753,
+      "sequence_mean_overlap_pct": 0.011147776864774497,
+      "frame_max_painted_pct": 4.1235532407407405
+    },
+    {
+      "condition": "fog",
+      "family": "risk_budget",
+      "sequence_mean_painted_pct": 1.263339714691917,
+      "frame_p95_painted_pct": 2.777980324074071,
+      "sequence_mean_overlap_pct": 0.01726027784469184,
+      "frame_max_painted_pct": 4.128472222222222
+    },
+    {
+      "condition": "rain",
+      "family": "threshold",
+      "sequence_mean_painted_pct": 0.7148846311079213,
+      "frame_p95_painted_pct": 2.289641203703703,
+      "sequence_mean_overlap_pct": 0.005963320477238805,
+      "frame_max_painted_pct": 3.7688078703703707
+    },
+    {
+      "condition": "rain",
+      "family": "hysteresis",
+      "sequence_mean_painted_pct": 0.779945796287552,
+      "frame_p95_painted_pct": 2.289641203703703,
+      "sequence_mean_overlap_pct": 0.008298762403503166,
+      "frame_max_painted_pct": 3.7688078703703707
+    },
+    {
+      "condition": "rain",
+      "family": "dwell",
+      "sequence_mean_painted_pct": 0.7806204045792299,
+      "frame_p95_painted_pct": 2.2350405092592576,
+      "sequence_mean_overlap_pct": 0.007828364705457896,
+      "frame_max_painted_pct": 3.7688078703703707
+    },
+    {
+      "condition": "rain",
+      "family": "PRISM",
+      "sequence_mean_painted_pct": 0.7678507447284068,
+      "frame_p95_painted_pct": 2.1161747685185186,
+      "sequence_mean_overlap_pct": 0.007574378079943493,
+      "frame_max_painted_pct": 3.7688078703703707
+    },
+    {
+      "condition": "rain",
+      "family": "risk_budget",
+      "sequence_mean_painted_pct": 1.124702003263304,
+      "frame_p95_painted_pct": 2.3282407407407404,
+      "sequence_mean_overlap_pct": 0.011907045208844867,
+      "frame_max_painted_pct": 3.7688078703703707
+    }
+  ],
+  "numpy": "2.5.3",
+  "definition": "Union of nonzero per-cue masks rendered on black native-resolution canvases; panel/ribbon excluded. Pixel support, not perceived clutter."
+}
