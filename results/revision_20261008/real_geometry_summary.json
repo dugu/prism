@@ -1,0 +1,136 @@
+{
+  "source_sha256": "2f5e0ff540995eb382407747cfa6067f1ecd0a9d8c99194d1b913e6084331930",
+  "scenarios": {
+    "recorded": [
+      1.0,
+      1.0,
+      false
+    ],
+    "depth_0.8": [
+      0.8,
+      1.0,
+      false
+    ],
+    "depth_1.2": [
+      1.2,
+      1.0,
+      false
+    ],
+    "ttc_0.8": [
+      1.0,
+      0.8,
+      false
+    ],
+    "ttc_1.2": [
+      1.0,
+      1.2,
+      false
+    ],
+    "joint_0.8": [
+      0.8,
+      0.8,
+      false
+    ],
+    "joint_1.2": [
+      1.2,
+      1.2,
+      false
+    ],
+    "ttc_unavailable": [
+      1.0,
+      1.0,
+      true
+    ]
+  },
+  "summary": [
+    {
+      "scenario": "recorded",
+      "frames": 1200,
+      "rank_changed": 0,
+      "set_changed": 0,
+      "representation_changed": 0,
+      "cue_count": 936,
+      "transitions": 163,
+      "extra_cue_frames": 0,
+      "omitted_cue_frames": 0
+    },
+    {
+      "scenario": "depth_0.8",
+      "frames": 1200,
+      "rank_changed": 731,
+      "set_changed": 742,
+      "representation_changed": 784,
+      "cue_count": 1956,
+      "transitions": 279,
+      "extra_cue_frames": 1040,
+      "omitted_cue_frames": 20
+    },
+    {
+      "scenario": "depth_1.2",
+      "frames": 1200,
+      "rank_changed": 684,
+      "set_changed": 238,
+      "representation_changed": 277,
+      "cue_count": 686,
+      "transitions": 139,
+      "extra_cue_frames": 6,
+      "omitted_cue_frames": 256
+    },
+    {
+      "scenario": "ttc_0.8",
+      "frames": 1200,
+      "rank_changed": 526,
+      "set_changed": 312,
+      "representation_changed": 398,
+      "cue_count": 1255,
+      "transitions": 229,
+      "extra_cue_frames": 337,
+      "omitted_cue_frames": 18
+    },
+    {
+      "scenario": "ttc_1.2",
+      "frames": 1200,
+      "rank_changed": 467,
+      "set_changed": 233,
+      "representation_changed": 299,
+      "cue_count": 693,
+      "transitions": 123,
+      "extra_cue_frames": 16,
+      "omitted_cue_frames": 259
+    },
+    {
+      "scenario": "joint_0.8",
+      "frames": 1200,
+      "rank_changed": 786,
+      "set_changed": 919,
+      "representation_changed": 966,
+      "cue_count": 2348,
+      "transitions": 350,
+      "extra_cue_frames": 1436,
+      "omitted_cue_frames": 24
+    },
+    {
+      "scenario": "joint_1.2",
+      "frames": 1200,
+      "rank_changed": 756,
+      "set_changed": 366,
+      "representation_changed": 449,
+      "cue_count": 522,
+      "transitions": 103,
+      "extra_cue_frames": 22,
+      "omitted_cue_frames": 436
+    },
+    {
+      "scenario": "ttc_unavailable",
+      "frames": 1200,
+      "rank_changed": 1028,
+      "set_changed": 613,
+      "representation_changed": 651,
+      "cue_count": 158,
+      "transitions": 18,
+      "extra_cue_frames": 0,
+      "omitted_cue_frames": 778
+    }
+  ],
+  "scope": "Sensitivity to prescribed common scaling or removal of geometric inputs on one unlabelled video. Recorded estimates are not ground truth. No empirical error probabilities, safety, accuracy or generalisation claims."
+}

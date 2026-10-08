@@ -51,7 +51,7 @@ All budget-constrained policies use a cue-count limit of five, a surrogate-cost 
 | Risk + dwell | 2.06 | 213 / 325 | 3.24 | 0.868 |
 | PRISM | 2.06 | 213 / 325 | 3.46 | 0.846 |
 
-Persistence explains much of the change. Simpler dwell ranking matches clear-scene retention and cue count with fewer transitions; PRISM paints slightly less area. A 360-configuration exploratory study finds preference-dependent trade-offs, not consistent superiority. See [extended evaluation](results/extended/README.md) for grouped scene selection, temporal omissions, occupancy and geometry stress tests.
+Persistence explains much of the change. Simpler dwell ranking matches clear-scene retention and cue count with fewer transitions; PRISM paints slightly less area. A 360-configuration exploratory study finds preference-dependent trade-offs, not consistent superiority. See [extended evaluation](results/extended/README.md) for grouped scene selection, temporal omissions, occupancy and geometry stress tests. A [real-video geometry sensitivity replay](results/revision_20261008/README.md) reports how prescribed depth/TTC perturbations change cue selection on the saved 1200-frame demonstration.
 
 A [paired geometry-to-selection diagnostic](results/revision_20261006/README.md) substitutes true versus estimated geometry while holding other candidate attributes fixed. It measures selection consistency under prescribed competition, not road-hazard accuracy.
 
